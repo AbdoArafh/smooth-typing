@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: monospace;
+  color: #646669;
+  transition: all 0.1s ease;
+}
+
+.text.typed {
+  color: white;
+}
+
+.text.error {
+  text-decoration: underline;
+  color: rgb(223, 46, 46);
+}
+
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 2rem;
+  background-color: yellow;
+  animation: blink 1s ease-in-out infinite forwards;
+  transition: transform 0.1s ease;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  font-size: 2rem;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 1;
+}

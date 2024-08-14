@@ -1,0 +1,14 @@
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #323437;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
